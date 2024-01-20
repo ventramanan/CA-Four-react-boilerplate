@@ -1,0 +1,85 @@
+.score{
+    display: flex;
+    justify-content: center;
+    margin-top:90px ;
+    font-weight: bolder;
+    font-size: medium;
+
+}
+.finalresult{
+    text-align: center;
+    position: relative;
+    top:9vw;
+}
+#play{
+    height:30px ;
+    display: flex;
+    justify-content: center;
+    margin-top:60px ; 
+  
+}
+#img{
+    width: 100px;
+    height: 70px;
+    position: relative;
+    bottom: 3vw;
+}
+#per{
+    text-align: center;
+    position:relative;
+    top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h3{
+    font-size:medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 10px;
+
+}
+.the{
+    display:flex;
+    justify-content: flex-end;
+    position: relative;
+    right:30px;
+    
+}
+.falling-balls-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 9999; 
+  }
+  
+  .falling-ball {
+    position: absolute;
+    font-size: 20px;
+    color: #FFD700; 
+    animation: fallAnimation linear infinite;
+  }
+  
+  @keyframes fallAnimation {
+    to {
+      transform: translateY(100vh) rotate(360deg);
+    }
+  }
+.main-part{
+    position: relative;
+    bottom: 30px;
+}
+#th{
+    padding: 5px;
+    width:70px;
+  }
+  #ply{
+    border-radius: 4px;
+    box-shadow: rgba(252, 5, 190, 0.35) 0px 5px 15px;
+  }
+  #ply:hover{
+    color:brown;
+  }
+

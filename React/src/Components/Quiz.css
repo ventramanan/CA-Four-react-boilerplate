@@ -1,0 +1,192 @@
+body{
+    background-color: rgb(11, 164, 246);
+  }
+  .box{
+    background-color: white;
+  }
+  .container{
+    background-color: white;
+    width: 70vw;
+    height:70vh;
+    margin-top:5vw;
+    margin-left: 15vw;
+    box-shadow: rgba(6, 246, 86, 0.976) 0px 19px 38px, rgb(5, 242, 131) 0px 15px 12px;
+    border-radius: 20px;
+  
+  }
+  .options{
+      background-color: rgb(65, 2, 253);
+      padding:4px ;
+      border-radius: 5px;
+      width:30vw;
+      text-align: center;
+      color: white;
+  }
+  .option1{
+    display: flex;
+    justify-content: space-between;
+    margin-top:3vw;
+    margin-right: 2vw;
+  }
+  #question{
+    margin-top:2vw;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    position: relative;
+    bottom: 7vw;
+  }
+  #optionbar{
+    position: relative;
+    bottom: 5vw;
+
+    margin-left: 20px;
+  }
+  #button1{
+    background-color: green;
+    border: none;
+    padding:5px;
+    width:11vw;
+    height:30px;
+    margin-right:2vw ;
+    font-weight: bold;
+    border-radius: 2px;
+    color: white;
+    
+  }
+  
+  #button2{
+    background-color:red;
+    border: none;
+    padding:5px;
+    width:11vw;
+    margin-right:2vw;
+    font-weight: bold;
+    border-radius: 2px;
+    color: white;
+  }
+  
+  #button3{
+    background-color: red;
+    border: none;
+    padding:3px;
+    width:8vw;
+    margin-right: 2vw;
+    font-weight: bold;
+  }
+  
+  .buttons{
+    margin-top:50px;
+    position: relative;
+    bottom: 5vw;
+    left: 13px;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+  } 
+  #title{
+    text-align: center;
+    color:black;
+    font-weight: bolder;
+   font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    bottom:5vw;
+  }
+  .container {
+    display: block;
+  } 
+  #theme{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .main{
+    position: relative;
+    bottom:6vw;
+    right:10px;
+  }
+  #number{
+    position: relative;
+    bottom:8vw;
+    left: 10px;
+    font-weight: bolder;
+
+  }
+  #image{
+    width: 100px;
+    height: 70px;
+    position: relative;
+    top:1vw ;
+}
+#the{
+  padding: 5px;
+  width:70px;
+}
+.falling-balls-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 9999; 
+}
+
+.falling-ball {
+  position: absolute;
+  font-size: 20px;
+  color: #FFD700; 
+  animation: fallAnimation linear infinite;
+}
+
+@keyframes fallAnimation {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
+#title{
+  position: relative;
+  font-size: 2em;
+  letter-spacing: 0px;
+  color:black;
+  width: 100%;
+  
+  line-height: 0.5em;
+  outline: none;
+  animation:  animate  5s linear infinite;
+}
+@keyframes animate {
+  0% {
+    color:blue; 
+  }
+  50% {
+    color: red; 
+  }
+  100% {
+    color: black; 
+  }
+  200%{
+    color: blueviolet;
+  }
+  300%{
+    color: rgb(10, 238, 79);
+  }
+  200%{
+    color: rgb(7, 100, 134);
+  }
+  200%{
+    color: rgb(171, 7, 37);
+  }
+
+}
+.options{
+  padding: 10px; 
+  box-shadow: 0 0 10px rgb(47, 6, 233); 
+  transition: box-shadow 0.3s ease; 
+}
+
+.options:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 1); 
+}
+
+
