@@ -2,10 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import { Context } from "./context";
 import "./Result.css";
 import image from "./../assets/unnamed.png";
-import { useNavigate } from 'react-router-dom';
 // This result function basically used here to take care of  all the functionality of the this result page
 
-function Result() {
+function Result(prop) {
   const context = useContext(Context);
   console.log(context)
   const [containerColor, setContainerColor] = useState("white");
@@ -42,18 +41,7 @@ function Result() {
 
   
 //This play function is used to reload and again go to the main page where you can paly the game
-const [resetQuiz, setResetQuiz] = useState(false);
-const navigate = useNavigate();
-
-// Function to reset the quiz
-const play = () => {
-  setResetQuiz(true);
-};
-
-// Reset the quiz when the state changes
-if (resetQuiz) {
-  navigate('/QuestionBox');
-}
+const {play} = prop
   //This return functionality helps to execute everything
 
   return (

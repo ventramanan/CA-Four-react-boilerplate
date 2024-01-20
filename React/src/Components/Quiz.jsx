@@ -7,7 +7,7 @@ import image from "./../assets/unnamed.png";
 
 //This Quiz function serves as the main function for this Quiz app
 
-function Quiz() {
+function Quiz({setstart}) {
   //here I am setting the state for manipulating the questions.js
     const [count,setCount] = useState(0)
   //and this one is for result 
@@ -75,14 +75,20 @@ function Quiz() {
 
      }
   }
+
+  function play(){
+    setCount(0)
+    setResult(0)
+  }
   // this the return keyword whatever your are writting inside it will execute in the page
   return (
-    <div>
+    <div id='mainpage'>
       {count >4 ? (
         // this is where we are calling the result page
         <Context.Provider value={result}>
-          <Result />
+          <Result play={play}/>
         </Context.Provider>
+        
       ) : (
         <div className={`container ${count > 4 ? 'block-container' : ''}`}>
           <img id="image" src={image} />
