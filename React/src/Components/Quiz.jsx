@@ -75,7 +75,7 @@ function Quiz() {
 
      }
   }
-  // this the return keyword whatever your writting inside it will execute in the page
+  // this the return keyword whatever your are writting inside it will execute in the page
   return (
     <div>
       {count >4 ? (

@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Context } from "./context";
 import "./Result.css";
 import image from "./../assets/unnamed.png";
-// This result function basically used here to take care of the all the functionality of the this result page
+// This result function basically used here to take care of  all the functionality of the this result page
 
 function Result() {
   const context = useContext(Context);
@@ -42,7 +42,7 @@ function Result() {
   
 //This play function is used to reload and again go to the main page where you can paly the game
   function play(){
-    window.location.href="reload"
+    window.location.href="./Quiz.jsx"
     
   }
   //This return functionality helps to execute everything
